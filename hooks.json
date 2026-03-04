@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "hooks": {
+    "sessionStart": [
+      { "command": "./hooks/session-init.sh", "timeout": 2 }
+    ],
+    "beforeSubmitPrompt": [
+      { "command": "./hooks/model-advisor.sh", "timeout": 2 }
+    ]
+  }
+}
